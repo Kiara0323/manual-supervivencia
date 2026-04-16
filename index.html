@@ -1,13 +1,20 @@
+<!--Documento HTML del proyecto de supervivencia en camping-->
 <!DOCTYPE html>
 <html lang="es">
+
+<!--Configuración de la página-->
 <head>
     <meta charset="UTF-8">
-    <title>Manual de Supervivencia</title>
+    <title>Manual de Supervivencia en Camping</title>
 </head>
+
 <body>
 
+<!--Encabezado pricipal con el título del sitio-->
 <header>
     <h1 id="inicio">Manual de Supervivencia en Camping</h1>
+
+    <!--Menú de navegación con enlaces a las secciones-->
     <nav>
         <a href="#equipo">Equipo</a>
         <a href="#pasos">Pasos</a>
@@ -15,13 +22,16 @@
     </nav>
 </header>
 
+<!--Contenido principal de la página-->
 <main>
 
+    <!--Sección que muestra el equipo necesario para camping-->
     <section id="equipo">
         <h2>Equipo necesario</h2>
 
         <p>Este sitio muestra consejos básicos para sobrevivir en camping.</p>
         
+        <!--Lista de elementos necesarios-->  
         <ul>
             <li>Carpa resistente</li>
             <li>Linterna</li>
@@ -29,19 +39,30 @@
             <li>Agua potable</li>
         </ul>
 
+        <!--Imágen representativa del equipo de camping-->
         <img src="camping.jpg" alt="Equipo de camping como carpa y mochila">
     </section>
+
+    <!--Sección con pasos básicos de supervivencia-->
     <section id="pasos">
         <h2>Pasos de supervivencia</h2>
+
+        <p>Seguir estos pasos puede ayudarte a sobrevivir en situaciones al aire libre.</p>
         
+        <!--Pasos ordenados a seguir--> 
         <ol>
             <li>Buscar un lugar seguro</li>
             <li>Conseguir agua</li>
             <li>Encender fuego</li>
         </ol>
+        
+        <!--Video de supervivencia en camping-->
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/6c9K3x2hK7Q" title="Supervivencia en camping" frameborder="0" allowfullscreen>            
+        </iframe>
 
         <h3>Elementos importantes</h3>
-
+        
+        <!--Tabla con elementos y sus usos-->
         <table border="1">
             <tr>
                 <th>Elemento</th>
@@ -61,20 +82,23 @@
             </tr>
         </table>
     </section>
+
+    <!--Sección de contacto con formulario-->
     <section id="contacto">
         <h2>Contacto</h2>
 
         <p>Si tenés dudas o querés más información, completá el siguiente formulario.</p>
-
+        
+        <!--Formulario para que el usuario envíe un mensaje-->
         <form>
             <label>Nombre:</label><br>
-            <input type="text"><br><br>
+            <input type="text" required><br><br>
 
             <label>Email:</label><br>
-            <input type="email"><br><br>
+            <input type="email" required><br><br>
 
             <label>Mensaje:</label><br>
-            <textarea></textarea><br><br>
+            <textarea> required</textarea><br><br>
 
             <button type="submit">Enviar</button>
         </form>
@@ -83,6 +107,7 @@
 
 </main>
 
+<!--Pie de página con información del proyecto-->
 <footer>
     <p>Proyecto integrador de Programación III</p>
 </footer>
