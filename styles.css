@@ -1,0 +1,202 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Variables */
+:root{
+    --verde: #2d5a27;
+    --verde-claro: #4d7c46;
+    --beige: #f4f1e8;
+    --marron: #7a5c3e;
+    --oscuro: #1f1f1f;
+    --blanco: #ffffff;
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:'Poppins', sans-serif;
+    background-color:var(--beige);
+    color:var(--oscuro);
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background-color:var(--verde);
+    color:var(--blanco);
+    text-align:center;
+    padding:30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    margin-bottom:15px;
+}
+
+/* Navegación */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:var(--blanco);
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background-color:var(--verde-claro);
+    transform:scale(1.05);
+}
+
+/* Main */
+main{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:25px;
+}
+
+/* Cards */
+.card{
+    background-color:var(--blanco);
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+h2{
+    margin-bottom:15px;
+    color:var(--verde);
+}
+
+/* Listas */
+ul, ol{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+/* Imagen */
+img{
+    width:100%;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+/* Video */
+iframe{
+    width:100%;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+/* Tabla */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background-color:var(--verde);
+    color:white;
+}
+
+/* Formulario */
+form{
+    margin-top:15px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+/* Botón */
+button{
+    background-color:var(--verde);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:var(--verde-claro);
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background-color:var(--verde);
+    color:white;
+    margin-top:30px;
+}
+
+/* Tablet */
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    main{
+        grid-template-columns:1fr;
+    }
+}
+
+/* Celular */
+@media (max-width:480px){
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    button{
+        width:100%;
+    }
+}
