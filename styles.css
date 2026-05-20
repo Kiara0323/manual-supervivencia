@@ -200,3 +200,8 @@ footer{
         width:100%;
     }
 }
+
+/* Scroll suave */
+html{
+    scroll-behavior:smooth;
+}
