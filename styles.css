@@ -191,6 +191,10 @@ footer{
         font-size:1.8rem;
     }
 
+    nav{
+        gap: 10px;
+    }
+
     .card{
         padding:15px;
     }
