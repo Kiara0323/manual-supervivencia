@@ -208,3 +208,15 @@ footer{
 html{
     scroll-behavior:smooth;
 }
+
+#btnConsejos {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+#vistaPrevia {
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--marron);
+}

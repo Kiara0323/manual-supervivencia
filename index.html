@@ -50,19 +50,19 @@
 
         <!--Imágen representativa del equipo de camping-->
         <img src="camping.jpg" alt="Equipo de camping como carpa y mochila">
+
+        <h3>Consejos útiles</h3>
+
+        <button id="btnConsejos">Mostrar consejos</button>
+
+        <ul id="listaConsejos"></ul>
+
+        <h3>Agregá tu propio consejo</h3>
+
+        <input type="text" id="nuevoConsejo" placeholder="Escribí un consejo">
+
+        <p id="vistaPrevia"></p>
     </section>
-
-<h3>Consejos útiles</h3>
-
-<button id="btnConsejos">Mostrar consejos</button>
-
-<ul id="listaConsejos"></ul>
-
-<h3>Agregá tu propio consejo</h3>
-
-<input type="text" id="nuevoConsejo" placeholder="Escribí un consejo">
-
-<p id="vistaPrevia"></p>
 
     <!--Sección con pasos básicos de supervivencia-->
     <section id="pasos" class="card">
@@ -112,13 +112,13 @@
         
         <!--Formulario para que el usuario envíe un mensaje-->
         <form id="formContacto">
-            <label>Nombre:</label><br>
+            <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" required><br><br>
 
-            <label>Email:</label><br>
+            <label for="email">Email:</label><br>
             <input type="email" id="email" required><br><br>
 
-            <label>Mensaje:</label><br>
+            <label for="mensaje">Mensaje:</label><br>
             <textarea id="mensaje" required></textarea><br><br>
 
             <p id="mensajeError" style="color:red;"></p>

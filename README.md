@@ -34,7 +34,7 @@ Este proyecto es una página web desarrollada como trabajo integrador de Program
 - Formulario con validación usando JavaScript.
 - Lista interactiva de consejos utilizando un array.
 - Vista previa del consejo mientras el usuario escribe.
-- Validación del formulario mediante `try...catch.`
+- Validación del formulario mediante `try...catch`.
 
 ## Mejoras visuales incorporadas
 - Diseño responsive para celulares y tablets
