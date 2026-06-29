@@ -33,9 +33,13 @@ function mostrarVistaPrevia() {
 
     const texto = document.getElementById("nuevoConsejo").value;
 
-    document.getElementById("vistaPrevia").textContent =
-        "Consejo: " + texto;
+    if (texto === "") {
+        document.getElementById("vistaPrevia").textContent = "";
+    } else {
 
+    document.getElementById("vistaPrevia").textContent =
+        "Vista previa del consejo: " + texto;
+    }
 }
 
 // Evento input
