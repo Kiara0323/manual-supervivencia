@@ -62,6 +62,10 @@ function validarFormulario(event) {
             throw new Error("Todos los campos son obligatorios.");
         }
 
+        if (nombre.length < 3) {
+            throw new Error("El nombre debe tener al menos 3 caracteres.");
+        } 
+
         error.style.color = "green";
         error.textContent = "Formulario enviado correctamente.";
 
