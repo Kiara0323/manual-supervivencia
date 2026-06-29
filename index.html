@@ -52,6 +52,18 @@
         <img src="camping.jpg" alt="Equipo de camping como carpa y mochila">
     </section>
 
+<h3>Consejos útiles</h3>
+
+<button id="btnConsejos">Mostrar consejos</button>
+
+<ul id="listaConsejos"></ul>
+
+<h3>Agregá tu propio consejo</h3>
+
+<input type="text" id="nuevoConsejo" placeholder="Escribí un consejo">
+
+<p id="vistaPrevia"></p>
+
     <!--Sección con pasos básicos de supervivencia-->
     <section id="pasos" class="card">
         <h2>Pasos de supervivencia</h2>
@@ -99,15 +111,17 @@
         <p>Si tenés dudas o querés más información, completá el siguiente formulario.</p>
         
         <!--Formulario para que el usuario envíe un mensaje-->
-        <form>
+        <form id="formContacto">
             <label>Nombre:</label><br>
-            <input type="text" required><br><br>
+            <input type="text" id="nombre" required><br><br>
 
             <label>Email:</label><br>
-            <input type="email" required><br><br>
+            <input type="email" id="email" required><br><br>
 
             <label>Mensaje:</label><br>
-            <textarea required></textarea><br><br>
+            <textarea id="mensaje" required></textarea><br><br>
+
+            <p id="mensajeError" style="color:red;"></p>
 
             <button type="submit">Enviar</button>
         </form>
@@ -120,6 +134,8 @@
 <footer>
     <p>Proyecto integrador de Programación III</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
